@@ -19,6 +19,7 @@ class DLL:
             self.start=n
         else:
             n=Node(None,data,self.start)
+            self.start.prev=n
             self.start=n
 
     def insert_at_last(self,data):
@@ -39,42 +40,32 @@ class DLL:
             temp=self.start
             while temp is not None:
                 if temp.item==data:
-                    return data
+                    return temp
                 temp=temp.next
 
     def insert_after(self,aft,data):
         if self.is_empty():
             pass
         else:
-            temp=self.start
-            while temp is not None:
-                if temp.item==aft:
-                    if temp.next==None:
-                        self.insert_at_last(data)
-                        break
-                    else:
-                        n=Node(temp,data,temp.next)
-                        temp.next.prev=n
-                        temp.next=n
-                        break
-                temp=temp.next
+            temp=self.search(aft)
+            if temp.next==None:
+                self.insert_at_last(data)
+            else:
+               n=Node(temp,data,temp.next)
+               temp.next.prev=n
+               temp.next=n
 
-    def insert_before(self,aft,data):
+    def insert_before(self,bef,data):
         if self.is_empty():
             pass
         else:
-            temp=self.start
-            while temp is not None:
-                if temp.item==aft:
-                    if temp.prev==None:
-                        self.insert_at_first(data)
-                        break
-                    else:
-                        n=Node(temp.prev,data,temp)
-                        temp.prev.next=n
-                        temp.prev=n
-                        break
-                temp=temp.next
+            temp=self.search(bef)
+            if temp.prev==None:
+                self.insert_at_first(data)
+            else:
+                n=Node(temp.prev,data,temp)
+                temp.prev.next=n
+                temp.prev=n
 
     def delete_first(self):
         if self.is_empty():
@@ -138,30 +129,17 @@ class DLLIterator:
 
 
 dll=DLL()
-dll.insert_at_first(10)
-dll.insert_at_last(20)      
-dll.insert_at_last(30)      
-dll.insert_at_last(40)          
-dll.insert_at_last(55)          
-dll.insert_after(10,15)
-dll.insert_after(30,35)
-dll.insert_after(40,45)
-dll.insert_after(20,25)
-dll.insert_before(10,5)
-dll.insert_before(5,0)
-dll.insert_before(55,50)
-dll.insert_after(55,60)
-dll.printlist()
-print() 
-dll.delete_first()
-dll.delete_first()
-dll.delete_last()
-dll.delete_last()
-dll.delete_item(10)
-dll.delete_item(20)
-dll.delete_item(30)
-dll.delete_item(40)
-dll.delete_item(50)
+dll.insert_at_first(2)
+dll.insert_at_last(3)
+dll.insert_at_last(5)
+dll.insert_at_last(6)
+dll.insert_at_last(7)
+dll.insert_at_last(8)
+dll.insert_after(3,4)
+dll.insert_after(8,9)
+dll.insert_before(2,1)
+dll.insert_before(3,2.5)
+dll.insert_before(9,8.5)
 
 #USING THE ITERATOR TO PRINT
 for x in dll:
