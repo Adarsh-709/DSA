@@ -1,11 +1,9 @@
-#DATA STRUCTURES AND ALGORITHMS 
+# DATA STRUCTURES AND ALGORITHMS 
+# Linked Lists
 <br>
-#Linked Lists
+> Singly Linked List - (SLL.py)
 <br>
-1. Singly Linked List - (SLL.py)
+> Doubly Linked List - (DLL.py)
 <br>
-1. Doubly Linked List - (DLL.py)
-<br>
-1. Circular Linked List - (CLL.py)
-<br>
-<br>
+> Circular Linked List - (CLL.py)
+
