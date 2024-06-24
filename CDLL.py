@@ -58,6 +58,8 @@ class CDLL:
     def delete_first(self):
         if self.is_empty():
             print("List is empty")
+        elif self.start.prev==None:
+            self.start=None
         else:
             self.start.prev.next=self.start.next
             self.start.next.prev=self.start.prev
@@ -66,6 +68,8 @@ class CDLL:
     def delete_last(self):
         if self.is_empty():
             print("List is empty")
+        elif self.start.prev==None:
+            self.start=None
         else:
             self.start.prev.prev.next=self.start
             self.start.prev=self.start.prev.prev
@@ -122,6 +126,8 @@ mylist.insert_after(6,7)
 mylist.delete_item(5)
 mylist.delete_item(7)
 mylist.delete_item(0)
-#mylist.print()
+mylist.print()
+print()
+mylist.delete_last()
 for x in mylist:
     print(x,end=" ")
