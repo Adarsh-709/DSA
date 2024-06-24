@@ -9,7 +9,7 @@
 <br>
 > Circular Doubly Linked List - (CDLL.py)
 
-# STACK
+# Stack
 <br>
 > Using List - (UL_stack.py)
 

@@ -9,10 +9,15 @@ class Stack:
         self.items.append(data)
 
     def pop(self):
-        return self.items.pop()
-    
+        if not self.is_empty():
+            return self.items.pop()
+        else:
+            raise IndexError("Stack is empty")
     def peek(self):
-        print("The Last Element is :",self.items[-1])
+        if not self.is_empty():
+            print("The Last Element is :",self.items[-1])
+        else:
+            raise IndexError("Stack is empty")
 
     def size(self):
         print("Elements Present is :",len(self.items))
