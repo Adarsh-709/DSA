@@ -12,5 +12,9 @@
 # Stack
 <br>
 > Using List - (UL_stack.py)
+<br>
+> By extending list class - (in_list_stacl.py)
+<br>
+> Using SLL class - (SLL_stack.py)
 
 
