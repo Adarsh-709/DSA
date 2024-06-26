@@ -16,5 +16,9 @@
 > By extending list class - (in_list_stacl.py)
 <br>
 > Using SLL class - (SLL_stack.py)
+<br>
+> BY extending SLL class - (ext_SLL_stack.py)
+<br>
+> Inheriting SLL class - (in_SLL_stack.py)
 
 
