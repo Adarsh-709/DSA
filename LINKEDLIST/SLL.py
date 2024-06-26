@@ -80,7 +80,7 @@ class SLLIterator:
         data=self.current.item
         self.current=self.current.next
         return data
-    
+'''   
 mylist=SLL()
 mylist.insert_first(10)
 mylist.insert_last(15)
@@ -98,3 +98,4 @@ for x in mylist:
     print(x,end=" ")
     
 
+'''
