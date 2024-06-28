@@ -21,4 +21,8 @@
 <br>
 > Inheriting SLL class - (in_SLL_stack.py)
 
+# Queue
+<br>
+> Using List - (usinglist_queue.py)
+
 
