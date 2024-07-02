@@ -17,11 +17,14 @@ class SLL:
         self.head=n
 
     def insert_last(self,data):
-        temp=self.head
         n=Node(data)
-        while temp.next is not None:
-            temp=temp.next
-        temp.next=n
+        if self.is_empty():
+            self.head=n
+        else:
+            temp=self.head
+            while temp.next is not None:
+                temp=temp.next
+            temp.next=n
 
     def search(self,data):
         temp=self.head
@@ -80,22 +83,17 @@ class SLLIterator:
         data=self.current.item
         self.current=self.current.next
         return data
-'''   
+''' 
 mylist=SLL()
-mylist.insert_first(10)
-mylist.insert_last(15)
-mylist.insert_first(0)
-mylist.insert_after(0,5)
-mylist.insert_last(20)
-mylist.printlist()
-print()
-mylist.delete_first()
+mylist.insert_first(2)
+mylist.insert_first(1)
+mylist.insert_last(3)
+mylist.insert_last(5)
+mylist.insert_after(3,4)
 mylist.delete_last()
-mylist.delete_item(10)
-
+mylist.delete_first()
+mylist.printlist()
 #PRINTING THE ELEMENTS USING ITERATOR
 for x in mylist:
     print(x,end=" ")
-    
-
 '''
