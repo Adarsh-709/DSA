@@ -1,4 +1,4 @@
-from LINKEDLIST.SLL import *
+from SLL import *
 class Stack:
     def __init__(self) -> None:
         self.mylist=SLL()
@@ -32,6 +32,7 @@ s1.push(20)
 s1.push(30)
 s1.push(40)
 s1.push(50)
+print("Top Element is:",s1.peek())
 print("Removed Element is:",s1.pop())
 print("Removed Element is:",s1.pop())
 print("Removed Element is:",s1.pop())

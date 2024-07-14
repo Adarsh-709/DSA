@@ -15,7 +15,7 @@
 <br>
 > By extending list class - (in_list_stack.py)
 <br>
-> Using SLL class - (SLL_stack.py)
+> Using SLL concept - (SLL_stack.py)
 <br>
 > BY extending SLL class - (ext_SLL_stack.py)
 <br>
@@ -27,10 +27,20 @@
 <br>
 > By extending list class - (in_list_queue.py)
 <br>
-> Using SLL class - (SLL_queue.py)
+> Using SLL concept - (SLL_queue.py)
 <br>
 > BY extending SLL class - (ext_SLL_queue.py)
 <br>
 > Inheriting SLL class - (in_SLL_queue.py)
 
-
+# Deque
+<br>
+> Using List - (usingList_deque.py)
+<br>
+> By inheriting list class - (inList_deque.py)
+<br>
+> BY extending DLL class - (ext_DLL_Deque.py)
+<br>
+> Inheriting DLL class - (in_DLL_Deque.py)
+<br>
+> Using DLL Concept - (DLL_Deque.py)

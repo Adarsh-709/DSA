@@ -1,4 +1,4 @@
-from LINKEDLIST.SLL import *
+from SLL import *
 
 class Stack(SLL):
     def __init__(self) -> None:

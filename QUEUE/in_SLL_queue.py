@@ -1,4 +1,4 @@
-from LINKEDLIST.SLL import *
+from SLL import *
 
 class Queue(SLL):
     def __init__(self, head=None) -> None:
