@@ -34,8 +34,7 @@ class Deque(DLL):
         if not self.is_empty():
             return self.start.item
         else:
-            raise IndexError("No Element at front")
-        
+            raise IndexError("No Element at front")     
 
     def get_rear(self):
         if not self.is_empty():
@@ -46,10 +45,8 @@ class Deque(DLL):
         else:
             raise IndexError("No Element at front")
         
-
     def size(self):
         return self.count
-    
     
     def delete_item(self, data):
         raise AttributeError('No Such Attribute')

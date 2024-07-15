@@ -33,7 +33,7 @@ class Deque:
         if not self.is_empty():
             return self.mylist[-1]
         else:
-            raise IndexError("No item at front!")
+            raise IndexError("No item at rear!")
         
     def size(self):
         return len(self.mylist)
@@ -41,10 +41,9 @@ class Deque:
 d1=Deque()
 d1.insert_front(20)
 d1.insert_front(30)
-d1.insert_front(40)
-d1.insert_front(50)
+d1.insert_rear(40)
+d1.insert_rear(50)
 d1.insert_front(60)
-d1.insert_rear(10)
 d1.delete_front()
 d1.delete_rear()
 print("Front = ",d1.get_front(),'Rear = ',d1.get_rear())

@@ -32,7 +32,7 @@ class Deque:
             self.rear=self.start
             self.front=self.start
         else:
-            n=Node(self.rear,data,self.rear.next)
+            n=Node(self.rear,data,None)
             self.rear.next=n
             self.rear=n
         
@@ -83,7 +83,6 @@ d1.insert_front(20)
 d1.insert_front(30)
 d1.insert_rear(40)
 d1.insert_rear(50)
-d1.delete_front()
 d1.delete_front()
 d1.delete_rear()
 print("Front :",d1.get_front())

@@ -44,3 +44,11 @@
 > Inheriting DLL class - (in_DLL_Deque.py)
 <br>
 > Using DLL Concept - (DLL_Deque.py)
+
+# Priority Queue
+<br>
+> Using List - (usingList_Pqueuepy)
+<br>
+> Using LinkedList Concept - (linkedlist_Pqueue.py)
+<br>
+> Using Heap - (heap_Pqueue.py)
